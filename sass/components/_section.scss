@@ -1,0 +1,21 @@
+.conteiner  {
+    width: 1200px;
+    margin: 0 auto;
+    padding:0 15px;
+}
+.section{
+    padding-top: 94px ;
+    padding-bottom: 94px;
+}
+.portfolio{
+    background-color:var(--portfolio-background);
+}
+.footer{
+    background-color: var(--background-footer);
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.conteiner-footer{
+    display: flex;
+    align-items: baseline;
+}

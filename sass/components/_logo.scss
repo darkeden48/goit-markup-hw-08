@@ -1,0 +1,18 @@
+.logo{
+    font-family: Raleway;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1.19;
+    color:var(--logo);
+    letter-spacing: 0.03em;
+    padding-bottom: 25px;
+&_studio{
+    color: var(--text-color);
+}
+&_studio-footer{
+    color: var(--log);
+}
+}
+.nav .logo{
+    padding-top: 24px;
+}
