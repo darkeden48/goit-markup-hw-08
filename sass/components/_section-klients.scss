@@ -4,22 +4,49 @@
     align-items: center;
 &__title{
 font-weight: bold;
+@media screen and (min-width: 1200px){
 font-size: 36px;
 line-height: 1.16;
+}
+@media screen and (min-width: 768px) and (max-width: 1200px){
+font-size: 28px;
+line-height: 1.17;
+}
 letter-spacing: 0.03em;
 color: var(--text-color);
 }
 &__list{
     display: flex;
     margin-top: 50px;
+    flex-wrap: wrap; 
 }
 &__item{
 display: flex;
-width: 170px;
+// width: 170px;
  height: 92px;
+ margin-top: 30px;
+ @media screen and(max-width: 768px){
+    flex-basis: calc((93%-60px)/2);
 }
-&__list &__item:not(:last-child){
+ @media screen and(min-width: 768px) and (max-width: 1200px){
+    flex-basis: calc((85%-60px)/3);
+ }
+}
+@media screen and(min-width: 768px) and (max-width: 1200px){
+    &__list &__item:not(:last-child){
+        margin-right: 30px;
+    }
+ }
+// &__list &__item:not(:last-child){
+//         margin-right: 30px;
+//         }
+@media screen and (max-width: 768px){
+&__list &__item:nth-child(2n + 2){
+            margin-right: 0;
+        }    
+&__list &__item:nth-child(2n + 1){
     margin-right: 30px;
+        }
     }
 &__link{
  display: flex;

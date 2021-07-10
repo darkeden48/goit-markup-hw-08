@@ -15,8 +15,8 @@
         <nav class="nav">
             <a class="logo" href="index.html">Web<span class="logo_studio">Studio</span></a>
             <ul class="nav__menu">
-                <li class="nav__item"><a class="nav__link" href="index.html">Студия</a></li>
-                <li class="nav__item"><a class="nav__link nav__link_link-active" href="portfolio.html">Портфолио</a></li>
+                <li class="nav__item"><a class="nav__link nav__link_link-active" href="index.html">Студия</a></li>
+                <li class="nav__item"><a class="nav__link" href="portfolio.html">Портфолио</a></li>
                 <li class="nav__item"><a class="nav__link" href="">Контакты</a></li>
             </ul>
         </nav>
@@ -32,6 +32,53 @@
                         <use href="./images/symbol-defs.svg#telefon"></use>
                     </svg>+38 096 111 11 11</a></li>
             </ul>
+            <button type="button" class="burger-menu-open">
+                <svg class="burger-menu__icon" width="24" height="16">
+                    <use href="./images/symbol-defs.svg#menu-burger"></use>
+                </svg>
+            </button>
+            <div class="mobile-menu is-hidden">
+                <div class="conteiner">
+                <ul class="mobile-nav">
+                    <li class="mobile-nav__item">
+                        <a href="" class="mobile-nav__link">Студия</a>
+                    </li>
+                    <li class="mobile-nav__item">
+                        <a href="" class="mobile-nav__link">Портфолио</a>
+                    </li>
+                    <li class="mobile-nav__item">
+                        <a href="" class="mobile-nav__link">Контакты</a>
+                    </li>
+                </ul>
+                <ul class="mobile-contacts-list">
+                    <li class="mobile-contacts__item">
+                        <a href="" class="mobile-contacts__link">+38 096 111 11 11</a>
+                    </li>
+                    <li class="mobile-contacts__item">
+                        <a href="" class="mobile-contacts__link">info@devstudio.com</a>
+                    </li>
+                </ul>
+                <ul class="mobile-media-list">
+                    <li class="mobile-media-list__item">
+                        <a href="" class="mobile-media-list__link">Instagram</a>
+                    </li>
+                    <li class="mobile-media-list__item">
+                        <a href="" class="mobile-media-list__link">Twitter</a>
+                    </li>
+                    <li class="mobile-media-list__item">
+                        <a href="" class="mobile-media-list__link">Facebook</a>
+                    </li>
+                    <li class="mobile-media-list__item">
+                        <a href="" class="mobile-media-list__link">LinkedIn</a>
+                    </li>
+                </ul>
+                <button type="button" class="burger-menu-close">
+                    <svg class="burger-menu__icon-close" width="18.67px" height="18.67px">
+                        <use href="./images/symbol-defs.svg#modal-close"></use>
+                    </svg>
+                </button> 
+            </div>
+        </div>
     </div>
     </header>
     <main>
@@ -237,6 +284,7 @@
             </form>
         </div>
     </footer>
+    <script src="./js/menu.js"></script>
 </body>
 </html>
             

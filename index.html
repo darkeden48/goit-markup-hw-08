@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/main.min.css">
 </head>
 <body>
-    <!-- <header class="header">
+    <header class="header">
         <div class="conteiner header-conteiner">
         <nav class="nav">
             <a class="logo" href="index.html">Web<span class="logo_studio">Studio</span></a>
@@ -32,10 +32,59 @@
                         <use href="./images/symbol-defs.svg#telefon"></use>
                     </svg>+38 096 111 11 11</a></li>
             </ul>
+            <div class="button-menu-hidden">
+            <button type="button" class="burger-menu-open">
+                <svg class="burger-menu-open__icon" width="24" height="16">
+                    <use href="./images/symbol-defs.svg#menu-burger"></use>
+                </svg>
+            </button>
+        </div>
+            <div class="mobile-menu is-hidden">
+                <div class="conteiner">
+                <ul class="mobile-nav">
+                    <li class="mobile-nav__item">
+                        <a href="" class="mobile-nav__link">Студия</a>
+                    </li>
+                    <li class="mobile-nav__item">
+                        <a href="" class="mobile-nav__link">Портфолио</a>
+                    </li>
+                    <li class="mobile-nav__item">
+                        <a href="" class="mobile-nav__link">Контакты</a>
+                    </li>
+                </ul>
+                <ul class="mobile-contacts-list">
+                    <li class="mobile-contacts__item">
+                        <a href="" class="mobile-contacts__link">+38 096 111 11 11</a>
+                    </li>
+                    <li class="mobile-contacts__item">
+                        <a href="" class="mobile-contacts__link">info@devstudio.com</a>
+                    </li>
+                </ul>
+                <ul class="mobile-media-list">
+                    <li class="mobile-media-list__item">
+                        <a href="" class="mobile-media-list__link">Instagram</a>
+                    </li>
+                    <li class="mobile-media-list__item">
+                        <a href="" class="mobile-media-list__link">Twitter</a>
+                    </li>
+                    <li class="mobile-media-list__item">
+                        <a href="" class="mobile-media-list__link">Facebook</a>
+                    </li>
+                    <li class="mobile-media-list__item">
+                        <a href="" class="mobile-media-list__link">LinkedIn</a>
+                    </li>
+                </ul>
+                <button type="button" class="burger-menu-close">
+                    <svg class="burger-menu__icon-close" width="18.67px" height="18.67px">
+                        <use href="./images/symbol-defs.svg#modal-close"></use>
+                    </svg>
+                </button> 
+            </div>
+        </div>
     </div>
-    </header> -->
+    </header>
     <main>
-        <!-- <section class="hero section hero-foto">
+        <section class="hero section hero-foto">
         <div class="conteiner">
             <h1 class="hero-text">эффективные решения<br> для вашего бизнеса</h1>
             <button data-modal-open class="hero-button" type="button">Заказать услугу</button>
@@ -98,7 +147,7 @@
                 </div>
             </div>
         </div>
-        </section> -->
+        </section>
         <section class="section">
             <div class="conteiner">
             <h2 class="shadow-title">Примеры работ</h2>
@@ -142,7 +191,7 @@
             </ul>
             </div>
         </section>
-        <!-- <section class="section section-two">
+        <section class="section section-two">
             <div class="conteiner">
             <h2 class="section-two__title">Чем мы занимаемся</h2>
             <ul class="section-two-list">
@@ -166,13 +215,18 @@
                 </li>
             </ul> 
         </div>      
-        </section> -->
-        <!-- <section class="section-three section">
+        </section>
+        <section class="section-three section">
             <div class="conteiner">
             <h2 class="section-three__title">Наша команда</h2>
             <ul class="section-three__names-list">
                 <li class="section-three-names-item">
-                    <img class="section-three-names-item__foto" src="images/igor.jpg" alt="Igor" width=270 height=260>
+                <picture>
+                    <source srcset="./images/igor.jpg 1x, ./images/imgigor-2x.jpg 2x" media="(min-width: 1200px)">
+                    <source srcset="./images/imgtablet-igor-1x.jpg 1x, ./images/imgtablet-igor-2x.jpg 2x" media="(min-width: 768px)">
+                    <source srcset="./images/mob-igor-1x.jpg 1x, ./images/mob-igor-2x.jpg 2x" media="(min-width: 480px)">
+                    <img class="section-three-names-item__foto" src="images/mob-igor-1x.jpg" alt="Igor">
+                </picture>
                 <div class="section-three-names-item__names-info">
                     <h3 class="section-three-names-item__title">Игорь Демьяненко</h3>
                     <p class="section-three-names-item__text">Product Designer</p>
@@ -209,7 +263,12 @@
                 </div>
                 </li>
                 <li class="section-three-names-item">
-                    <img class="section-three-names-item__foto" src="images/olga.jpg" alt="Olga" width=270 height=260>
+                    <picture>
+                        <source srcset="./images/olga.jpg 1x, ./images/imgolga-2x.jpg 2x" media="(min-width: 1200px)">
+                        <source srcset="./images/imgtablet-olga-1x.jpg 1x, ./images/imgtablet-olga-2x.jpg 2x" media="(min-width: 768px)">
+                        <source srcset="./images/mob-olga-1x.jpg 1x, ./images/mob-olga-2x.jpg 2x" media="(min-width: 480px)">
+                        <img class="section-three-names-item__foto" src="images/mob-olga-1x.jpg" alt="Olga">
+                    </picture>
                 <div class="section-three-names-item__names-info">
                     <h3 class="section-three-names-item__title">Ольга Репина</h3>
                     <p class="section-three-names-item__text">Frontend Developer</p>
@@ -246,7 +305,12 @@
                 </div>
                 </li>
                 <li class="section-three-names-item">
-                    <img class="section-three-names-item__foto" src="images/nikolai.jpg" alt="Nikolai" width=270 height=260>
+                    <picture>
+                        <source srcset="./images/nikolai.jpg 1x, ./images/imgnikolai-2x.jpg 2x" media="(min-width: 1200px)">
+                        <source srcset="./images/imgtablet-nikolai-1x.jpg 1x, ./images/imgtablet-nikolai-2x.jpg 2x" media="(min-width: 768px)">
+                        <source srcset="./images/mob-nikolai-1x.jpg 1x, ./images/mob-nikolai-2x.jpg 2x" media="(min-width: 480px)">
+                        <img class="section-three-names-item__foto" src="images/mob-nikolai-1x.jpg" alt="Nikolai">
+                    </picture>
                 <div class="section-three-names-item__names-info">
                     <h3 class="section-three-names-item__title">Николай Тарасов</h3>
                     <p class="section-three-names-item__text">Marketing</p>
@@ -283,7 +347,12 @@
                 </div>
                 </li>
                 <li class="section-three-names-item">
-                    <img class="section-three-names-item__foto" src="images/mihail.jpg" alt="Mihail" width=270 height=260>
+                    <picture>
+                        <source srcset="./images/mihail.jpg 1x, ./images/imgmihail-2x.jpg 2x" media="(min-width: 1200px)">
+                        <source srcset="./images/imgtablet-mihail-1x.jpg 1x, ./images/imgtablet-mihail-2x.jpg 2x" media="(min-width: 768px)">
+                        <source srcset="./images/mob-mihail-1x.jpg 1x, ./images/mob-mihail-2x.jpg 2x" media="(min-width: 480px)">
+                        <img class="section-three-names-item__foto" src="images/mob-mihail-1x.jpg" alt="Mihail">
+                    </picture>
                 <div class="section-three-names-item__names-info">
                     <h3 class="section-three-names-item__title">Михаил Ермаков</h3>
                     <p class="section-three-names-item__text">UI Designer</p>
@@ -321,8 +390,8 @@
                 </li>
             </ul>
         </div>
-        </section> -->
-        <!-- <section class="section">
+        </section>
+        <section class="section">
         <div class="conteiner clients-section">
             <h2 class="clients-section__title">Постоянные клиенты</h2>
             <ul class="clients-section__list">
@@ -370,11 +439,11 @@
                 </li>  
             </ul>
         </div>
-        </section> -->
+        </section>
     </main>
-    <!-- <footer class="footer">
+    <footer class="footer">
         <div class="conteiner conteiner-footer">
-        <div>
+        <div class="address-place">
         <a href="index.html" class="logo">Web<span class="logo_studio-footer">Studio</span></a>
             <address class="address">
                 <p class="address__info">г. Киев, пр-т Леси Украинки, 26</p>
@@ -432,8 +501,9 @@
                 </div>
             </form>
         </div>
-    </footer> -->
+    </footer>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
 </body>
 </html>
 

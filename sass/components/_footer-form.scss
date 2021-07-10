@@ -1,10 +1,16 @@
 .subscribe{
-    margin-left:93px;
-    display: flex;
-    align-items: flex-end;
-&__email-send{
-    display: flex;
+    // margin-left:93px;
+    // display: flex;
+    // align-items: flex-end;
+    text-align: center;
+@media screen and (min-width:768px){
+    width: 100%;
+    justify-content: center;
     flex-direction: column;
+}    
+&__email-send{
+    // display: flex;
+    // flex-direction: column;
 }
 &__label-email{
 font-weight: bold;
@@ -23,6 +29,8 @@ text-transform:uppercase;
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
     padding-left:16px;
+
+    width: 100%;
 }
 &__input-email::placeholder{
     font-size: 16px;
@@ -31,13 +39,13 @@ text-transform:uppercase;
     color: rgba(255, 255, 255, 0.6);
 }
 &__button-link{
-    display: flex;
+    // display: flex;
     align-content: center;
     align-items: center;
     justify-content: center;
     width: 200px;
     height: 50px;
-    margin-left: 12px;
+    // margin-left: 12px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     background-color: var(--hero-button-background);
     color: var(--background-color);
