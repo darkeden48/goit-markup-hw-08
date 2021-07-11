@@ -1,6 +1,8 @@
 .section-two{
     padding-top: 0px;
+@media screen and(max-width:1200px) {
     display: none;
+}
 .section-two__title{
     font-weight: bold;
     font-size: 36px;
