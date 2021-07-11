@@ -456,14 +456,15 @@ picture {
   height: 600px;
   margin-left: auto;
   margin-right: auto;
+  background-image: linear-gradient(to left, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/mob-hero-foto-1x.jpg");
   background-position: center;
   background-blend-mode: screen;
   background-size: cover;
 }
 
-@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+@media (min-device-pixel-ratio: 2) and (min-width: 480px), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero-foto {
-    background-image: linear-gradient(to left, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/background-hero.jpg");
+    background-image: linear-gradient(to left, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/mob-hero-foto-1x.jpg");
   }
 }
 
@@ -475,7 +476,7 @@ picture {
 
 @media (min-device-pixel-ratio: 2) and (min-width: 1200px), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero-foto {
-    background-image: linear-gradient(to left, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/mob-hero-foto-1x.jpg");
+    background-image: linear-gradient(to left, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/background-hero.jpg");
   }
 }
 
@@ -557,8 +558,9 @@ picture {
   flex-direction: column;
   align-items: center;
   position: absolute;
-  width: 529px;
-  height: 609px;
+  width: 100%;
+  max-width: 450px;
+  max-height: 609px;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%) scale(1);
@@ -671,7 +673,6 @@ picture {
 }
 
 .modal-form__place textarea {
-  width: 448px;
   height: 120px;
   padding: 12px 16px;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
