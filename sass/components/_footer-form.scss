@@ -1,16 +1,24 @@
 .subscribe{
-    // margin-left:93px;
-    // display: flex;
-    // align-items: flex-end;
+    @media screen and (min-width: 1200px){
+    margin-left:93px;
+    display: flex;
+    align-items: flex-end;
+    }
+@media screen and (max-width:1200px){   
+    margin-top: 60px;
     text-align: center;
-@media screen and (min-width:768px){
+}
+@media screen and (min-width:768px) and (max-width:1200px){
     width: 100%;
     justify-content: center;
     flex-direction: column;
 }    
 &__email-send{
-    // display: flex;
-    // flex-direction: column;
+    display: flex;
+    flex-direction: column;
+    @media screen and (max-width:1200px){ 
+    align-items: center;
+    }
 }
 &__label-email{
 font-weight: bold;
@@ -29,8 +37,13 @@ text-transform:uppercase;
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
     padding-left:16px;
-
-    width: 100%;
+@media screen and (max-width: 768px){
+    max-width: 100%;
+    min-width: 100%;
+}
+@media screen and (min-width: 768px) and (max-width: 1200px){
+    min-width: 450px;
+}
 }
 &__input-email::placeholder{
     font-size: 16px;
@@ -39,13 +52,15 @@ text-transform:uppercase;
     color: rgba(255, 255, 255, 0.6);
 }
 &__button-link{
-    // display: flex;
+    @media screen and(min-width:1200px){
+    display: flex;
+    margin-left: 12px;
+    }
     align-content: center;
     align-items: center;
     justify-content: center;
     width: 200px;
     height: 50px;
-    // margin-left: 12px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     background-color: var(--hero-button-background);
     color: var(--background-color);
@@ -57,7 +72,15 @@ text-transform:uppercase;
     border:none;
     cursor: pointer;
 }
+&__button-place{
+    @media screen and (min-width: 1200px){
+        margin-top: 20px;
+    }
+    @media screen and (min-width: 320px) and (max-width: 1200px){
+    margin-top: 20px;
+}
+}
 &__button-icon{
-    margin-left: 10px;
+   margin-left: 10px;
 }
 }
